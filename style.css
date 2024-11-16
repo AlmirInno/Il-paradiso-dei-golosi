@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin: 0;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header>nav {
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(0, 26, 48);
+    padding: 0 15px;
+    display: flex;
+}
+
+header>nav img {
+    margin: 5px 20px 0 0;
+    width: 50px;
+    height: 50px;
+}
+
+header>nav>ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header>nav>ul>li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header>nav>ul>li.mobile {
+    display: none;
+}
+
+header>nav>ul>li a:link,
+header>nav>ul>li a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+header>nav>ul>li a:hover,
+header>nav>ul>li a:active {
+    text-decoration: underline;
+}
+
+header h1 {
+    margin: 50px 0 75px 0;
+    text-align: center;
+    font-size: 72px;
+    font-family: 'Tangerine', cursive;
+}
+
+main section.product {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.product article {
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #fff;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 10px 40px rgba(0, 26, 48, 20%);
+}
+
+main section.product article img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+main section.product article h3 {
+    color: #333333;
+
+    margin: 25px 0 8px 0;
+    font-size: 22px;
+}
+
+main section.product article small {
+    color: #797979;
+    font-size: 18px;
+}
+
+main section.product article div a:link,
+main section.product article div a:visited {
+    display: block;
+    color: #ffffff;
+    padding: 16px 0;
+    margin: 30px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(37, 206, 124);
+    transition: background-color 0.2s ease-in-out;
+}
+
+main section.product article div a:hover,
+main section.product article div a:active {
+    background-color: rgba(0, 147, 100, 0.975);
+}
+
+main section.content-text {
+    margin: 80px 0;
+    line-height: 25px;
+}
+
+footer {
+    background-color: rgb(0, 26, 48);
+    color: #fff;
+    padding: 50px 0px;
+}
+
+@media (max-width:768px) {
+
+
+    header>nav>ul {
+        color: #fff;
+        display: flex;
+        justify-content: right;
+    }
+
+    header>nav>ul>li.desktop {
+        display: none;
+    }
+
+    header>nav>ul>li.mobile {
+        display: inline;
+        color: #fff;
+    }
+
+    .container {
+        padding: 0px 25px;
+        width: 100%;
+    }
+
+    main section.product {
+        flex-wrap: wrap;
+    }
+
+    main section.product article {
+        width: 100%;
+    }
+
+    main section.product article div a:link,
+    main section.product article div a:visited {
+        background-color: rgb(36, 99, 208);
+    }
+
+    main section.product article div a:hover,
+    main section.product article div a:active {
+        background-color: rgb(26, 74, 155);
+    }
+
+}
